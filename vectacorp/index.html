@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="d.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+</head>
+<body>
+
+
+<!--Home page-->
+
+
+	<div data-role="page" id="home" data-theme="d">
+		<header data-role="header">
+        <h1>Vecta Corp.</h1>
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+            <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+            <li><a href="#solutions" data-icon="gear">Solutions</a></li>
+            <li><a href="#contact" data-icon="comment">Contact</a></li>
+            </ul>
+        </div>
+       </header>
+		<div data-role="main" class="ui-content">
+			<p>Welcome <br><br>
+
+			With innovative approaches and advanced methodologies, Vecta Corporation provides scalable business solutions to help companies achieve success through revenue increase, cost management, and user satisfaction. Our approach stems from the three most important business growth aspects: helping companies reach prospects, assist in converting prospects to customers, and assist in retaining those customers. This is accomplished through our interactive solutions and expertise in providing a memorable and positive user experience.</p>
+		</div>
+		
+		<div data-role="collapsibleset">
+		<h4 class="ui-content">Client Testimonials</h4>
+		<div data-role="collapsible">
+		<h3>Iona Ford</h3>
+		<p>Throughout the years we have worked with Vecta Corporation, we have always been amazed at the level of dedication and professionalism that they have provided us and our WGDC products. It is this commitment that has increased both our income and exposure exponentially. <br><br>
+
+		Iona Ford<br>
+		President<br>
+		Chevy Dealers Association</p>
+		</div>
+		
+		<div data-role="collapsible">
+		<h3>Robin Banks</h3>
+		<p>Incredible results from an incredible effort by the Vecta Corporation team! We are very pleased with the business benefits we have rceived by working with them.<br><br>
+
+		Robin Banks <br>
+		CEO <br>
+		Profits Financial, Inc.</p>
+		</div>
+		
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h5>2016</h5>
+		</div>
+	</div>
+
+<!--	Solutions Page-->
+
+
+	<div data-role="page" id="solutions" data-theme="d">
+		<header data-role="header">
+        <h1>Vecta Corp.</h1>
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+            <li><a href="#home" data-icon="home">Home</a></li>
+            <li><a href="#solutions" data-icon="gear" class="ui-btn-active">Solutions</a></li>
+            <li><a href="#contact" data-icon="comment">Contact</a></li>
+            </ul>
+        </div>
+       </header>
+		<div data-role="main" class="ui-content">
+			<h2>Our Solutions</h2>
+	
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#pros">vProspect</a></li>
+				<li><a href="#con">vConvert</a></li>
+				<li><a href="#ret">vRetain</a></li>
+			</ul>
+		
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h5>2016</h5>
+		</div>
+	</div>
+
+<!--Vprospect dialog-->
+
+
+	<div data-role="page" data-dialog="true" id="pros" data-theme="d">
+	  <div data-role="header">
+		<h1>vProspect 2.0</h1>
+	  </div>
+
+	  <div data-role="main" class="ui-content">
+		<p>Define and research your target audience, define your strategy to reach that audience and present a strong and memorable brand to that audience.</p>
+		
+	  </div>
+	</div>
+	
+
+<!--Vconvert dialog-->
+
+	<div data-role="page" data-dialog="true" id="con" data-theme="d">
+	  <div data-role="header">
+		<h1>vConvert 2.0</h1>
+	  </div>
+
+	  <div data-role="main" class="ui-content">
+		<p>Create a highly user-friendly and easy-to-navigate information architecture that will help your prospects interact with the company on a highly interactive level.</p>
+		
+	  </div>
+	</div>
+	
+	
+<!--Vretain dialog-->
+
+
+	<div data-role="page" data-dialog="true" id="ret" data-theme="d">
+		<div data-role="header">
+			<h1>vRetain 1.0</h1>
+		  </div>
+
+		  <div data-role="main" class="ui-content">
+			<p>Build on existing customer relationships to improve productivity and maximize customer loyalty, while growing revenues.</p>
+
+		  </div>
+	</div>
+
+	
+<!--	Contact Page-->
+
+
+	<div data-role="page" id="contact" data-theme="d">
+		<header data-role="header">
+        <h1>Vecta Corp.</h1>
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+            <li><a href="#home" data-icon="home">Home</a></li>
+            <li><a href="#solutions" data-icon="gear">Solutions</a></li>
+            <li><a href="#contact" data-icon="comment" class="ui-btn-active">Contact</a></li>
+            </ul>
+        </div>
+       </header>
+		<div data-role="main" class="ui-content">
+		<form>
+
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="name">
+			
+			<label for="email">Email:</label>
+			<input type="text" name="email" id="email">
+			
+			<label for="product">Which product you have?</label>
+			<select name="product" id="product">
+				<option value="vprospect">vProspect</option>
+				<option value="vconvert">vConvert</option>
+				<option value="vretain">vRetain</option>
+			</select>
+						
+			<label for="comment">Comment:</label>
+			<textarea name="comment" id="comment"></textarea>
+			
+			
+			<input type="submit" value="Submit" data-inline="true">
+			
+			</form>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h5>2016</h5>
+		</div>
+	</div>
+
+	
+</body>
+</html>
